@@ -25,7 +25,7 @@ var johnThirdGame = 103;
 var johnAverage = (johnFirstGame + johnSecondGame + johnThirdGame) / 3;
 
 var markFirstGame = 89;
-var markSecondGame = 130;
+var markSecondGame = 120;
 var markThirdGame = 103;
 
 var markAverage = (markFirstGame + markSecondGame + markThirdGame) / 3;
@@ -48,26 +48,42 @@ console.log ('Is Mark\'s team better at basketball than John\'s team? ' + johnHi
 
 if (johnAverage > markAverage && johnAverage > maryAverage) {
     console.log ('John\'s team is the best basketball team with an average score of ' + johnAverage + ' points.');
-} else if ( markAverage > johnAverage && markAverage > maryAverage) {
+} else if (markAverage > johnAverage && markAverage > maryAverage) {
     console.log ('Mark\'s team is the best basketball team with an average score of ' + markAverage + ' points.');
-} else if ( maryAverage > johnAverage && maryAverage > markAverage) {
+} else if (maryAverage > johnAverage && maryAverage > markAverage) {
     console.log ('Mary\'s team is the best basketball team with an average score of ' + markAverage + ' points.');
-} else if (markAverage = johnAverage && markAverage > maryAverage) {
+} else if (markAverage === johnAverage && markAverage > maryAverage) {
     console.log ('Mark\'s and John\'s teams are equally good at basketball with an average score of ' + johnAverage + ' points.');
-} else if (markAverage = maryAverage && markAverage > johnAverage) {
+} else if (markAverage === maryAverage && markAverage > johnAverage) {
     console.log ('Mark\'s and Mary\'s teams are equally good at basketball with an average score of ' + markAverage + ' points.');
-} else if (maryAverage = johnAverage && maryAverage > markAverage) {
+} else if (maryAverage === johnAverage && maryAverage > markAverage) {
     console.log ('Mary\'s and John\'s teams are equally good at basketball with an average score of ' + johnAverage + ' points.');
-}/* else if (maryAverage = johnAverage && johnAverage = markAverage) {
+} else if (maryAverage === johnAverage && johnAverage === markAverage) {
     console.log ('All three teams Mark\'s, Mary\'s and John\'s are equally good at basketball with an average score of ' + johnAverage + ' points.');
-}*/
+}
 
 
-
-
-
-
-
-
-
-
+switch (true) {
+    case johnAverage > markAverage && johnAverage > maryAverage: 
+        console.log ('John\'s team is the best basketball team with an average score of ' + johnAverage + ' points.');
+        break;
+    case markAverage > johnAverage && markAverage > maryAverage:
+        console.log ('Mark\'s team is the best basketball team with an average score of ' + markAverage + ' points.');
+        break;
+    case maryAverage > johnAverage && maryAverage > markAverage:
+        console.log ('Mary\'s team is the best basketball team with an average score of ' + markAverage + ' points.');
+        break;
+    case markAverage === johnAverage && markAverage > maryAverage:
+        console.log ( 'Mark\'s and John\'s teams are equally good at basketball with an average score of ' + johnAverage + ' points.');
+        break;
+    case markAverage === maryAverage && markAverage > johnAverage:
+        console.log ('Mark\'s and Mary\'s teams are equally good at basketball with an average score of ' + markAverage + ' points.');
+        break;
+    case maryAverage === johnAverage && maryAverage > markAverage:
+        console.log ('Mary\'s and John\'s teams are equally good at basketball with an average score of ' + johnAverage + ' points.');
+        break;
+    case maryAverage === johnAverage && johnAverage === markAverage:
+        console.log ('All three teams Mark\'s, Mary\'s and John\'s are equally good at basketball with an average score of ' + johnAverage + ' points.');
+        break;
+}
+        
