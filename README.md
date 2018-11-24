@@ -1,10 +1,10 @@
 # Course Assignments:
 
-[Coding Challenge 1](/)
+[Coding Challenge 1](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20challenge%201)
 
-[Coding Challenge 2]
+[Coding Challenge 2](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20challenge%202)
 
-[Coding Challenge 3]
+[Coding Challenge 3](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20challenge%203)
 
 
 
