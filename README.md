@@ -2,11 +2,11 @@
 
 [Coding Challenge 1](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20challenge%201)
 
-[Coding Challenge 2](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20challenge%202)
+[Coding Challenge 2](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20Challenge%202)
 
-[Coding Challenge 3](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20challenge%203)
+[Coding Challenge 3](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20Challenge%203)
 
-[Coding Challenge 4](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20challenge%204)
+[Coding Challenge 4](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20Challenge%204)
 
 
 
