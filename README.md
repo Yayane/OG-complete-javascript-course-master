@@ -8,6 +8,8 @@
 
 [Coding Challenge 4](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20Challenge%204)
 
+[Coding Challenge 5](https://github.com/Yayane/OG-complete-javascript-course-master/tree/master/2-JS-basics/starter/Coding%20Challenge%205)
+
 
 
 
