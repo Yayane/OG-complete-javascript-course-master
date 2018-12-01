@@ -209,10 +209,7 @@ console.log('John has a higher BMI than Mark. His BMI is ' + john.BMI);
 CODING CHALLENGE 5
 */
 
-
-       
-var bills = [124, 48, 268, 180, 42];
-  
+/* 
 var bills = {
     all: [124,48,268,180,42],
     first: 124,
@@ -237,15 +234,148 @@ for (var i = 0; i < bills.all.length; i++) {
 console.log(tips);
 };
 
-for (var i= 0; i <bills.all.length; i++) {
+for (var i = 0; i < bills.all.length; i++) {
+    var tips = [bills.calcTip(bills.all[i])]
     var totals = [bills.all[i] + tips[i]]
-console.log(totals[i]);
+console.log(totals);
+
 };
 
-console.log(bills);
+*/
 
-alert('Well... I cannot do the Challenge 5 because I don\'t understand why the total of bills and tips only shows the total of the first bill + the last tip, and the 4 others as undefined. So, that is where I got so far...')
+ 
+var john = {
+    name: 'John',
+    bills: [124,48,268,180,42],
+    calcTips: function() {
+        this.tips = [];
+        this.totals = [];
+                
+        for (var i = 0; i < this.bills.length; i++) {
+            var percentage;
+            var bill = this.bills[i];
+            
+            if (bill < 50) {
+                percentage = .2;
+            } else if (bill >= 50 && bill < 200) {
+                percentage = .15;
+            } else {
+                percentage = .1;
+            }
+            
+            this.tips[i] = bill * percentage;
+            this.totals[i] = bill + bill * percentage;
+        }
+    }
+};
 
+john.calcTips();
+console.log(john.tips);
+console.log(john.totals);
+
+
+var mark = {
+    name: 'Mark',
+    bills: [77, 475, 110, 45],
+    calcTips: function() {
+        this.tips = [];
+        this.totals = [];
+                
+        for (var i = 0; i < this.bills.length; i++) {
+            var percentage;
+            var bill = this.bills[i];
+            
+            if (bill < 100) {
+                percentage = .2;
+            } else if (bill >= 100 && bill < 300) {
+                percentage = .1;
+            } else {
+                percentage = .25;
+            }
+            
+            this.tips[i] = bill * percentage;
+            this.totals[i] = bill + bill * percentage;
+        }
+    }
+};
+
+mark.calcTips();
+console.log(mark.tips);
+console.log(mark.totals);
+
+
+
+/* 
+var john = {
+    name: 'John',
+    bills: [124,48,268,180,42],
+    calcTips: function() {
+        this.tips = [];
+        this.totals = [];
+                
+        for (var i = 0; i < this.bills.length; i++) {
+            var percentage;
+            var bill = this.bills[i];
+            
+            if (bill < 50) {
+                percentage = .2;
+            } else if (bill >= 50 && bill < 200) {
+                percentage = .15;
+            } else {
+                percentage = .1;
+            }
+            
+            this.tips[i] = bill * percentage;
+            this.totals[i] = bill + bill * percentage;
+            
+        }
+    }
+};
+
+
+var mark = {
+    name: 'Mark',
+    bills: [77, 475, 110, 45],
+    calcTips: function() {
+        this.tips = [];
+        this.totals = [];
+                
+        for (var i = 0; i < this.bills.length; i++) {
+            var percentage;
+            var bill = this.bills[i];
+            
+            if (bill < 100) {
+                percentage = .2;
+            } else if (bill >= 100 && bill < 300) {
+                percentage = .1;
+            } else {
+                percentage = .25;
+            }
+            
+            this.tips[i] = bill * percentage;
+            this.totals[i] = bill + bill * percentage;
+            
+        }
+    }
+};
+
+
+function calcAverage(tips) {
+    var sum = 0;
+    for (var i = 0; i < tips.length; i++) {
+        sum = sum + tips[i];
+    }
+    return sum / tips.length;
+}
+
+// Do the calculations
+john.calcTips();
+mark.calcTips();
+
+john.average = calcAverage(john.tips);
+mark.average = calcAverage(mark.tips);
+console.log(john, mark);
+*/
 
 
 
